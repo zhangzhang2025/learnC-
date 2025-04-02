@@ -16,7 +16,7 @@ int main(){
         cin >> vStr[i];
     }
     map<string, int> mStrInt;
-
+    //竖向的字符串添加到map容器中
     for(int i = 0; i < m; i++){
         string s;
         for(int j = 0; j < n; j++){
@@ -24,6 +24,7 @@ int main(){
         }
         mStrInt[s]++;
     }
+    
     int max = 0;
     for(const auto &it:mStrInt){
         if(it.second > max){
